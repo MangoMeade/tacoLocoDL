@@ -12,7 +12,7 @@
 	Each JSON Object specifies the type of taco, price and quantity ordered. </br></br>
 	Examples:</br></br>
 	For one taco type order:</br></br>
-			```[{"name":"Chorizo Taco","price":3.5, "ordered":1}]```
+			```[{"name":"Chorizo Taco","price":3.5, "ordered":1}]``` </br></br>
 		For two taco type order:</br></br>
 			```[{"name":"Chorizo Taco","price":3.5, "ordered":1},
  {"name":"Veggie Taco","price":2.5, "ordered":1}]```</br></br>
