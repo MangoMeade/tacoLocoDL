@@ -19,7 +19,7 @@ public class TacoController {
     Taco chorizoTaco = new Taco("Chorizo Taco", 3.50);
     ArrayList<Taco> tacoList = new ArrayList<>(Arrays.asList(veggieTaco, chickenTaco, beefTaco, chorizoTaco));
 
-    @RequestMapping("/tacosmenu")
+    @RequestMapping("/tacos-menu")
     public ArrayList tacos() {
 
         return tacoList;
@@ -31,7 +31,7 @@ public class TacoController {
         return new ResponseEntity<>(veggieTaco, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/order-veggie-taco", method = RequestMethod.POST)
+    @RequestMapping(value = "/order-taco", method = RequestMethod.POST)
     public ResponseEntity<Taco> update(@RequestBody Taco orderTaco) {
 
         return new ResponseEntity<>(orderTaco, HttpStatus.OK);
